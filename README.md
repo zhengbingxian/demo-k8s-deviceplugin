@@ -10,6 +10,9 @@ deviceplugin可以通过k8s daemonset形式运行在每个node节点上，也可
 2、查看k8s node资源，会发现4个zbx.com/mockgpu资源。 
 3、创建pod，使用1个该资源。 会发现pod会在该节点创建，并且总资源数-1。
 
+其中deviceplugin的设备插件流程图：
+![DevicePlugin Img](doc/deviceplugin.png)
+
 
 ## 编译
 ```shell
